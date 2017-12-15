@@ -62,7 +62,7 @@ func (logger Logger) SetLogLevel(level Level) {
 // Note that the writers may also filter out messages that
 // are less than their registered minimum severity level.
 func (logger Logger) Logf(level Level, message string, args ...interface{}) {
-	logger.LogCallf(2, level, message, args...)
+	logger.LogCallf(3, level, message, args...)
 }
 
 // LogCallf logs a printf-formatted message at the given level.
